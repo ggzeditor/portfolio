@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="GGZ EDITOR — cinematic Minecraft editing portfolio.">
+  <title>GGZ EDITOR — Cinematic Minecraft Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="brand" href="#" data-scroll="0">GGZ<span></span> EDITOR</a>
+    <div class="nav-links">
+      <a href="#" data-scroll="3800">Work</a>
+      <a href="#" data-scroll="10200">Pricing</a>
+      <a href="#" data-scroll="14000">Contact</a>
+    </div>
+  </nav>
+
+  <div class="scroll-progress" id="progress"></div>
+
+  <!-- Non-3D fallback container (hidden if JS is active and 3D supported) -->
+  <main id="fallback" style="display: none; padding: 100px 20px;">
+    <h1>GGZ EDITOR</h1>
+    <p>Please view on a device supporting 3D transforms, or disable reduced motion.</p>
+  </main>
+
+  <div id="viewport">
+    <div id="camera">
+      <div id="scene">
+
+        <!-- SCENE 1: HERO (Z: 0 to -1500) -->
+        <div class="threed-element" data-z="-1500" data-x="0" data-y="0" data-scale="2.5">
+          <div class="hero-media">
+            <video id="heroVideo" muted loop playsinline preload="none">
+              <source data-src="hero-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="threed-element" data-z="200" data-x="0" data-y="-80">
+          <h1 class="hero-title">GGZ</h1>
+        </div>
+        <div class="threed-element" data-z="0" data-x="0" data-y="50">
+          <h1 class="hero-title accent">EDITOR</h1>
+        </div>
+        <div class="threed-element" data-z="-200" data-x="0" data-y="180">
+          <p class="hero-copy">Premium cinematics, trailers, motion graphics<br>and storytelling crafted frame by frame.</p>
+        </div>
+        <div class="threed-element" data-z="-300" data-x="0" data-y="280">
+          <div class="scroll-cue"><span>Scroll to Navigate Space</span><i></i></div>
+        </div>
+
+        <!-- SCENE 2: STATEMENT (Z: -2000 to -2700) -->
+        <div class="threed-element" data-z="-2000" data-x="-200" data-y="-120">
+          <h2 class="display-title">I DON'T JUST<br><span style="color:var(--muted)">EDIT.</span></h2>
+        </div>
+        <div class="threed-element" data-z="-2400" data-x="250" data-y="120">
+          <h2 class="display-title">I BUILD<br><span class="accent">STORIES.</span></h2>
+        </div>
+        <div class="threed-element" data-z="-2700" data-x="-150" data-y="300">
+          <p class="statement-copy">Every cut has a reason.<br>Story first. Impact second.</p>
+        </div>
+
+        <!-- DECORATIVE PORTAL (Z: -3200) -->
+        <div class="threed-element" data-z="-3300" data-x="0" data-y="0">
+          <div class="portal-ring"></div>
+        </div>
+
+        <!-- SCENE 3: PORTFOLIO (Z: -3800 to -8600) -->
+        <div class="threed-element" data-z="-3800" data-x="0" data-y="0">
+          <div class="section-head text-center">
+            <span class="section-kicker">01 / Selected Work</span>
+            <h2>Showcase</h2>
+            <p class="section-note">Explore the depths. Click to watch.</p>
+          </div>
+        </div>
+
+        <div class="threed-element" data-z="-4600" data-x="-350" data-y="0" data-ry="12">
+          <article class="work-card" data-sample="sample1.mp4" data-title="Sample 1">
+            <div class="card-number">01</div>
+            <video poster="sample1.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 01</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-5400" data-x="350" data-y="-80" data-ry="-10">
+          <article class="work-card" data-sample="sample2.mp4" data-title="Sample 2">
+            <div class="card-number">02</div>
+            <video poster="sample2.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 02</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-6200" data-x="-300" data-y="120" data-ry="8">
+          <article class="work-card" data-sample="sample3.mp4" data-title="Sample 3">
+            <div class="card-number">03</div>
+            <video poster="sample3.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 03</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-7000" data-x="400" data-y="80" data-ry="-15">
+          <article class="work-card" data-sample="sample4.mp4" data-title="Sample 4">
+            <div class="card-number">04</div>
+            <video poster="sample4.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 04</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-7800" data-x="-400" data-y="-60" data-ry="18">
+          <article class="work-card" data-sample="sample5.mp4" data-title="Sample 5">
+            <div class="card-number">05</div>
+            <video poster="sample5.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 05</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-8600" data-x="300" data-y="-120" data-ry="-8">
+          <article class="work-card" data-sample="sample6.mp4" data-title="Sample 6">
+            <div class="card-number">06</div>
+            <video poster="sample6.jpg" muted loop playsinline preload="none"></video>
+            <div class="card-shade"></div>
+            <div class="card-content"><span>Sample 06</span><strong>Cinematic Edit</strong></div>
+            <button class="play-button" type="button" aria-label="Play">↗</button>
+          </article>
+        </div>
+
+        <!-- SCENE 4: TRANSITION (Z: -9500) -->
+        <div class="threed-element" data-z="-9500" data-x="0" data-y="0">
+           <div class="portal-frame"></div>
+        </div>
+
+        <!-- SCENE 5: PRICING (Z: -10200 to -12500) -->
+        <div class="threed-element" data-z="-10200" data-x="0" data-y="0">
+          <div class="section-head text-center">
+            <span class="section-kicker">02 / Pricing</span>
+            <h2>Choose your level.</h2>
+            <p class="section-note">Simple packages. No confusing extras.</p>
+          </div>
+        </div>
+
+        <div class="threed-element" data-z="-11200" data-x="-450" data-y="0" data-ry="10">
+          <article class="price-card">
+            <span class="price-index">01</span>
+            <h3>Normal Edit</h3>
+            <strong>₹500</strong>
+            <p>Clean, polished editing for straightforward creator content.</p>
+            <ul><li>Basic cinematic editing</li><li>Standard transitions</li><li>Color grading</li><li>1 revision</li><li>3–5 day delivery</li></ul>
+            <a href="#" data-scroll="14000">Get Started ↗</a>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-11500" data-x="0" data-y="0" data-scale="1.1">
+          <article class="price-card featured">
+            <span class="price-index">02 / Popular</span>
+            <h3>Good Edit</h3>
+            <strong>₹1,500</strong>
+            <p>A stronger cinematic treatment with motion and custom effects.</p>
+            <ul><li>Advanced cinematic editing</li><li>Premium transitions</li><li>Professional color grading</li><li>Custom effects & overlays</li><li>3 revisions</li><li>5–7 day delivery</li></ul>
+            <a href="#" data-scroll="14000">Get Started ↗</a>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-11200" data-x="450" data-y="0" data-ry="-10">
+          <article class="price-card">
+            <span class="price-index">03</span>
+            <h3>Premium Edit</h3>
+            <strong>₹3,000</strong>
+            <p>Full cinematic production for stories that need a bigger finish.</p>
+            <ul><li>AAA-grade cinematic production</li><li>Advanced motion graphics</li><li>Custom 3D elements</li><li>Storytelling narrative</li><li>Unlimited revisions</li><li>Priority delivery</li></ul>
+            <a href="#" data-scroll="14000">Get Started ↗</a>
+          </article>
+        </div>
+
+        <div class="threed-element" data-z="-12500" data-x="0" data-y="0">
+          <div class="addon">
+            <div class="addon-info">
+              <span>ADD-ON</span>
+              <strong>Sticker Pack</strong>
+              <p>Custom animated stickers & overlays for your edits.</p>
+            </div>
+            <b>₹750</b>
+            <a href="#" data-scroll="14000">Add This ↗</a>
+          </div>
+        </div>
+
+        <!-- SCENE 6: CONTACT (Z: -14000 to -15500) -->
+        <div class="threed-element" data-z="-14000" data-x="0" data-y="-150">
+          <div class="contact-top text-center">
+            <span class="section-kicker">03 / Contact</span>
+            <h2 class="display-title">LET'S WORK<br><span style="color:var(--muted)">TOGETHER.</span></h2>
+          </div>
+        </div>
+
+        <div class="threed-element" data-z="-14600" data-x="-350" data-y="50" data-ry="15">
+          <a class="contact-card" href="https://discord.com/users/editor_ggz" target="_blank" rel="noopener">
+            <span>Discord</span><strong>editor_ggz</strong><i>↗</i>
+          </a>
+        </div>
+        
+        <div class="threed-element" data-z="-14700" data-x="0" data-y="50">
+          <a class="contact-card" href="https://instagram.com/ggz_haris23" target="_blank" rel="noopener">
+            <span>Instagram</span><strong>@ggz_haris23</strong><i>↗</i>
+          </a>
+        </div>
+
+        <div class="threed-element" data-z="-14600" data-x="350" data-y="50" data-ry="-15">
+          <a class="contact-card" href="mailto:nmahi8045@gmail.com">
+            <span>Email</span><strong>nmahi8045@gmail.com</strong><i>↗</i>
+          </a>
+        </div>
+        
+        <div class="threed-element" data-z="-15500" data-x="0" data-y="250">
+          <footer class="footer-end">
+            <div>GGZ<span></span> EDITOR</div>
+            <small>© 2026 — Crafted frame by frame.</small>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close video">×</button>
+      <span id="modalLabel" class="eyebrow">Portfolio</span>
+      <h2 id="modalTitle">Sample</h2>
+      <video id="modalVideo" controls playsinline preload="none"></video>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
